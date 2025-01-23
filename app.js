@@ -13,7 +13,7 @@ function exibirTexto(tag, texto){
 
 function exibirTextoNaTela(){
     exibirTexto('h1', 'Jogo do numero secreto!');
-    exibirTexto('.texto__paragrafo', 'Digite um numero entre 1 e 100: ');
+    exibirTexto('.texto__paragrafo', 'Digite um numero entre 1 e 50: ');
 }
 
 exibirTextoNaTela()
@@ -39,7 +39,7 @@ function verificarChute(){
 }
 
 function gerarNumero(){
-    let gerarNumeroAleatorio = parseInt(Math.random() * 100 + 1); // Aqui, o que eu fiz, na função, eu inclementei esse includes, que verifica se já não tem o numero que gerou no array, melhor que o python
+    let gerarNumeroAleatorio = parseInt(Math.random() * 50 + 1); // Aqui, o que eu fiz, na função, eu inclementei esse includes, que verifica se já não tem o numero que gerou no array, melhor que o python
     let quantidadeElementos = lista.length;
 
     if(quantidadeElementos == 10){
